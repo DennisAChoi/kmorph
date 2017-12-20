@@ -34,7 +34,7 @@ def generate_corpus(data_path):
     return corpus
 
 
-def counter_sorted(corpus):
+def get_word_frequency(corpus):
     _words = []
     for words in corpus:
         _words.extend(words)
@@ -48,6 +48,8 @@ def display_list(data_list):
 
 if __name__ == '__main__':
 	corpus = generate_corpus('./sample.txt')
-	basic_count = counter_sorted(corpus)
+	word_frequency = get_word_frequency(corpus)
+	print('- corpus info (noun) - ')
 	display_list(corpus)
-	display_list(basic_count)
+	print('- word frequency best 10 - ')
+	display_list(word_frequency[:10])

@@ -1,7 +1,6 @@
 from natto import MeCab
 import collections
 
-# _morpheme_type = ['NNG', 'NNP', 'NNB']
 _morpheme_type = ['NNG', 'NNP']
 _escape_pattern = ['\n']
 _nm = MeCab()
@@ -47,7 +46,8 @@ def display_list(data_list):
 		print(data)
 
 
-corpus = generate_corpus('./sample.txt')
-basic_count = counter_sorted(corpus)
-display_list(corpus)
-display_list(basic_count)
+if __name__ == '__main__':
+	corpus = generate_corpus('./sample.txt')
+	basic_count = counter_sorted(corpus)
+	display_list(corpus)
+	display_list(basic_count)

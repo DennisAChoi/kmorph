@@ -1,10 +1,11 @@
 from natto import MeCab
-
+import collections
 
 # _morpheme_type = ['NNG', 'NNP', 'NNB']
 _morpheme_type = ['NNG', 'NNP']
-_escape_pattern = ['\n', '^ROW_END^\n']
+_escape_pattern = ['\n']
 _nm = MeCab()
+
 
 def parse_sentence(text):
     global _nm
@@ -18,7 +19,6 @@ def parse_sentence(text):
         surface = _term_info[0]
         analysis = _term_info[1].split(',')
         if analysis[0] in _morpheme_type:
-            # print(surface, analysis[0])
             words.append(surface)
     return words
 
@@ -32,10 +32,22 @@ def generate_corpus(data_path):
         if line not in _escape_pattern:
             words = parse_sentence(line)
             corpus.append(words)
-            # print(words)
     return corpus
 
 
+def counter_sorted(corpus):
+    _words = []
+    for words in corpus:
+        _words.extend(words)
+    return sorted(collections.Counter(_words).items(), key=lambda data: data[1], reverse=True)
+
+
+def display_list(data_list):
+	for data in data_list:
+		print(data)
+
+
 corpus = generate_corpus('./sample.txt')
-for word in corpus:
-	print(word)
+basic_count = counter_sorted(corpus)
+display_list(corpus)
+display_list(basic_count)

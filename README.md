@@ -7,17 +7,17 @@
 * [Apache 2.0 라이센스](https://olis.or.kr/license/Detailselect.do?lId=1002)를 준수합니다.
 
 ### 셋업 가이드(ubuntu 기준) ###
-> Python 3.5 이상 설치( [miniconda](https://conda.io/miniconda.html) 추천 )
-> gcc 7.20 설치( sudo apt install gcc )
-> automake1.11 설치( sudo apt install automake1.11 )
-> natto-py 설치( pip install natto-py )
-> mecab-0.996 설치
-```
+* Python 3.5 이상 설치( [miniconda](https://conda.io/miniconda.html) 추천 )
+* gcc 7.20 설치( sudo apt install gcc )
+* automake1.11 설치( sudo apt install automake1.11 )
+* natto-py 설치( pip install natto-py )
+* mecab-0.996 설치
+    * ```
 $ cd mecab-0.006
 $ ./configure
 $ make
 $ sudo make install
-```
+    ```
 > mecab-ko-dic 설치
 > 은전한닢 프로젝트에서 제공하는 [mecab_ko_dic](https://bitbucket.org/eunjeon/mecab-ko-dic/downloads/) 을 다운로드
 >> ```

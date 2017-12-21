@@ -26,7 +26,8 @@
 * /usr/local/etc/mecabrc 을 편집하여 아래와 같이 수정
     * dicdir=/usr/local/lib/mecab/dic/mecab-ko-dic
 * mecab에서 정상적으로 한글 사전을 읽어드리는지 테스트
-    * mecab
-    ``` aaa ````
+>
+``` aaa 
+```
 * [은전한닢(mecab_ko) 품사표](https://docs.google.com/spreadsheets/d/1-9blXKjtjeKZqsf4NzHeYJCrr49-nXeRF6D80udfcwY/edit#gid=589544265)
 

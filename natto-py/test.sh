@@ -1,2 +1,2 @@
 #!/bin/bash
-python morpheme.py
+python corpus_extraction.py

@@ -1,7 +1,7 @@
 # KMORPH(한국어 형태소 분석기 개발) #
 
 ### 프로젝트 목적 ###
-* 본 프로젝트는 mecab 과 mecab_ko_dic 을 베이스로 한국어 텍스트 문서 분석 및 기계학습에 용이한 품사분석기를 개발 제공하고자 합니다.
+* 본 프로젝트는 mecab 과 mecab_ko_dic 을 base 로 한국어 텍스트 문서 분석 및 기계학습에 용이한 기능을 제공하는 품사분석기를 개발제공하고자 합니다.
 
 ### 라이센스 정보 
 * [Apache 2.0 라이센스](https://olis.or.kr/license/Detailselect.do?lId=1002)를 준수합니다.

@@ -12,22 +12,24 @@
 * automake1.11 설치( sudo apt install automake1.11 )
 * natto-py 설치( pip install natto-py )
 * mecab-0.996 설치
-* ```
+ ```
 $ cd mecab-0.006
 $ ./configure
 $ make
 $ sudo make install
-* ```
+ ```
 * mecab-ko-dic 설치
-  * 은전한닢 프로젝트에서 제공하는 [mecab_ko_dic](https://bitbucket.org/eunjeon/mecab-ko-dic/downloads/) 을 다운로드
+* 은전한닢 프로젝트에서 제공하는 [mecab_ko_dic](https://bitbucket.org/eunjeon/mecab-ko-dic/downloads/) 을 다운로드
+ ```
 $ tar zxvf mecab-ko-dic-x.x.x-xxxxxxxx.tar.gz
 $ cd mecab-ko-dic-x.x.x-xxxxxxxx
 $ cd ./configure
 $ make
 $ sudo make install
-  * /usr/local/etc/mecabrc 을 편집하여 아래와 문구 변경
-```
+  ```
+* /usr/local/etc/mecabrc 을 편집하여 아래와 문구 변경
+ ```
 dicdir=/usr/local/lib/mecab/dic/mecab-ko-dic
-```
+ ```
 * [은전한닢(mecab_ko) 품사표](https://docs.google.com/spreadsheets/d/1-9blXKjtjeKZqsf4NzHeYJCrr49-nXeRF6D80udfcwY/edit#gid=589544265)
 

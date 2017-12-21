@@ -26,8 +26,18 @@
 * /usr/local/etc/mecabrc 을 편집하여 아래와 같이 수정
     * dicdir=/usr/local/lib/mecab/dic/mecab-ko-dic
 * mecab에서 정상적으로 한글 사전을 읽어드리는지 테스트
->
-``` aaa 
-```
+    * $ mecab
+    ```
+한글이 제대로 분해가 되나?
+한글	NNG,*,T,한글,*,*,*,*
+이	JKS,*,F,이,*,*,*,*
+제대로	MAG,성분부사/양태부사,F,제대로,*,*,*,*
+분해	NNG,*,F,분해,*,*,*,*
+가	JKS,*,F,가,*,*,*,*
+되	VV,*,F,되,*,*,*,*
+나	EF,*,F,나,*,*,*,*
+?	SF,*,*,*,*,*,*,*
+EOS
+    ```
 * [은전한닢(mecab_ko) 품사표](https://docs.google.com/spreadsheets/d/1-9blXKjtjeKZqsf4NzHeYJCrr49-nXeRF6D80udfcwY/edit#gid=589544265)
 

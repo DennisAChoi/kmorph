@@ -27,7 +27,7 @@
     * dicdir=/usr/local/lib/mecab/dic/mecab-ko-dic
 * mecab에서 정상적으로 한글 사전을 읽어드리는지 테스트
     * $ mecab
-    ```
+```
 한글이 제대로 분해가 되나?
 한글	NNG,*,T,한글,*,*,*,*
 이	JKS,*,F,이,*,*,*,*
@@ -38,6 +38,6 @@
 나	EF,*,F,나,*,*,*,*
 ?	SF,*,*,*,*,*,*,*
 EOS
-    ```
+```
 * [은전한닢(mecab_ko) 품사표](https://docs.google.com/spreadsheets/d/1-9blXKjtjeKZqsf4NzHeYJCrr49-nXeRF6D80udfcwY/edit#gid=589544265)
 

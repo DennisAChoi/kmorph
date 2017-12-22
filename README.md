@@ -39,5 +39,9 @@
 ?	SF,*,*,*,*,*,*,*
 EOS
 ```
+* Jupuyter Notebook(*.ipynb) 파일 실행방법
+    * $ cd sample
+    * $ jupyter notebook
+    * 브라우저로 접속하여 테스트
 * [은전한닢(mecab_ko) 품사표](https://docs.google.com/spreadsheets/d/1-9blXKjtjeKZqsf4NzHeYJCrr49-nXeRF6D80udfcwY/edit#gid=589544265)
 

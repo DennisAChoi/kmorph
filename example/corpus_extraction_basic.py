@@ -8,9 +8,6 @@ _nm = MeCab()
 
 
 def filter_by_type(text):
-    global _nm
-    global _morpheme_type
-
     words = []
     for term_info in str(_nm.parse(text)).split('\n'):
         _term_info = term_info.split('\t')
@@ -24,15 +21,13 @@ def filter_by_type(text):
 
 
 def generate_corpus(data_path):
-    global _escape_pattern
-
     _corpus = []
     fp = open(data_path, 'r')
     for line in fp.readlines():
         if line not in _escape_pattern:
             terms = filter_by_type(line)
             _corpus.append(terms)
-    return corpus
+    return _corpus
 
 
 def term_frequency(_corpus):

@@ -32,7 +32,7 @@ def generate_corpus2(data_path):
     return _corpus
 
 
-corpus = generate_corpus2('sample.txt')
+corpus = generate_corpus2('news.txt')
 print('corpus : ', corpus)
 _cv = CountVectorizer()
 word_matrix = _cv.fit_transform(corpus)

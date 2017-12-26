@@ -43,7 +43,7 @@ def display_list(x_list):
 
 
 if __name__ == '__main__':
-    corpus = generate_corpus('./sample.txt')
+    corpus = generate_corpus('./news.txt')
     term_frequency = term_frequency(corpus)
     print('- corpus (noun) - ')
     display_list(corpus)

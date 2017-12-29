@@ -28,7 +28,7 @@
 * gcc 7.20 설치( sudo apt install gcc )
 * automake1.11 설치( sudo apt install automake1.11 )
 * natto-py 설치( pip install natto-py )
-* skleran 설치( pip install sklearn )
+* skleran 설치( pip install sklearn skipy)
 * mecab-0.996 설치
     * cd mecab-0.006
     * $./configure

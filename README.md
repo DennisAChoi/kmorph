@@ -4,8 +4,9 @@
 * 목적 
     * 본 프로젝트는 mecab 과 mecab_ko_dic 을 base 로 한국어 텍스트 문서 분석 및 기계학습에 용이한 기능을 제공하는 품사분석기를 개발제공
 * 기능 명세
-    * 데이터 분석 / 기계학습의 형태소분석기 필요한 기능 지원
-    * 주요 오픈소스 데이터 솔루션( Tensorflow / Pandas / Elasticstack / Apache Spark ... )의 플러그인 제공
+    * 머신러닝을 수행하기 편리한 Python 기반의 API 제공
+    * 원하는 다양한 Type(CSV, JSON, Dictionary, List, Serial, Dataframe)으로 결과 제공
+    * 향후 오픈소스 데이터 솔루션( Tensorflow / Pandas / Elasticstack / Apache Spark ... ) Contribution을 목표
 
 
 ### 라이센스 정보 
@@ -14,13 +15,13 @@
 
 ### Mecab 분석
 * 장점
-    * mecab 성능 품질 측면에서 검증이 되어 있음( 카카오토픽, LG )
+    * mecab 성능 품질 측면에서 검증이 되어 있음( 카카오토픽, LG전자 )
     * 안정적으로 한국어 사전이 갱신되고 있음
 * 단점
-    * 지정한 형태소를 추출기능 없
+    * 지정한 형태소를 추출기능 없음
     * 원형(활용형) 반환하지 않음
-    * Panda 포맷의 DataFrame 포맷 미제공
-    * 동의어 / 유의어 / 언어번역을 미제공
+    * Panda 포맷의 DataFrame 포맷 등 다양햔 type의 output 미제공(현재 String으로만 제공)
+    * 동의어 / 유의어 / 언어번역 등과 연계한 기능 미제공
 
 
 ### 셋업 가이드(ubuntu 기준)

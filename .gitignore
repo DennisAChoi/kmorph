@@ -1,6 +1,7 @@
 .idea
 *.o
 *.lo
+.ipynb_checkpoints
 src/mecab-0.996/Makefile
 src/mecab-0.996/autom4te.cache/*
 src/mecab-0.996/config.h
@@ -25,3 +26,4 @@ src/mecab-0.996/src/mecab-system-eval
 src/mecab-0.996/src/mecab-test-gen
 src/mecab-0.996/stamp-h1
 src/mecab-0.996/tests/Makefile
+
